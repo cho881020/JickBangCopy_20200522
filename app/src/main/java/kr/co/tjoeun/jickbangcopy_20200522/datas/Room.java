@@ -4,8 +4,20 @@ public class Room {
 
     private int price; // 만원단위로 기록. 15000 => 1억 5천
     private String address; // 구 동 만 기록. (마포구 망원동)
-    private int floor; // 층수 : 양수, 0층 : 반지하, 음수 : 지하 ?층
+    private int floor; // 층수 : 양수, 0층 : 반지하, 음수 : 지하 ?층 -2
     private String description; // 설명 문구
+
+    public String getFormattedFloor() {
+        if (this.floor > 0) {
+            return this.floor + "층";
+        }
+        else if (this.floor < 0) {
+            return String.format("지하 %d층", -this.floor);
+        }
+        else {
+            return "반지하";
+        }
+    }
 
     public String getFormattedPrice() {
         if (price < 10000) {
