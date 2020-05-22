@@ -1,11 +1,8 @@
 package kr.co.tjoeun.jickbangcopy_20200522;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
+
+import androidx.databinding.DataBindingUtil;
 
 import kr.co.tjoeun.jickbangcopy_20200522.databinding.ActivityDetailRoomBinding;
 
